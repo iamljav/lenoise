@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LENOISE</title>
+  <link rel="canonical" href="https://lenoise.xyz" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      background-color: #FF5500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .logo-wrap {
+      opacity: 0;
+      animation: appear 0.9s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      animation-delay: 0.1s;
+    }
+
+    .logo-wrap img {
+      display: block;
+      max-width: min(480px, 80vw);
+      width: 100%;
+      height: auto;
+    }
+
+    @keyframes appear {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .logo-wrap {
+        opacity: 1;
+        animation: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-wrap">
+    <img src="logo.png" alt="LENOISE" />
+  </div>
+</body>
+</html>
