@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LENOISE</title>
-  <link rel="canonical" href="https://lenoise.xyz" />
+  <link rel="canonical" href="https://lenoise.xyz"/>
   <style>
     *, *::before, *::after {
       box-sizing: border-box;
@@ -18,7 +18,7 @@
     }
 
     body {
-      background-color: #FF5500;
+      background-color: #FFFFF;
       display: flex;
       align-items: center;
       justify-content: center;
